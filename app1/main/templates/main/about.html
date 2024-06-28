@@ -1,4 +1,4 @@
-{% extends '..\..\app1\templates\base.html' %}
+{% extends 'base.html' %}
 {% load static %}
 
 <!DOCTYPE html>
@@ -7,6 +7,10 @@
 
 {% block css %}
 	<link rel="stylesheet" href="{% static "deps/css/my_footer_css.css" %}">
+{% endblock %}
+
+{% block modal_cart %}
+	{% include "includes/cart_button.html" %}
 {% endblock %}
 
 
